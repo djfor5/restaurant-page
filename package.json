@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx webpack --watch",
     "build": "webpack",
-    "gitpages": "git subtree push --prefix dist origin gh-pages"
+    "githubpages": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
