@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _loadContent_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadContent.js */ \"./src/loadContent.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _home_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home.jpg */ \"./src/home.jpg\");\n/* harmony import */ var _menu_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./menu.jpg */ \"./src/menu.jpg\");\n/* harmony import */ var _contact_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact.jpg */ \"./src/contact.jpg\");\n\n\n\n\n\n\n\n\n\nconst contentDiv = document.getElementById('content')\n\n\nlet nav\nlet homeBtn\nlet menuBtn\nlet contactBtn\n\n\nloadNav()\nloadHome(_home_jpg__WEBPACK_IMPORTED_MODULE_4__)\nupdateNavSelection(homeBtn)\n\n\nfunction loadHome(photo) {\n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'h1', `Welcome to The World's Best Restaurant!`)\n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'p', `This is The World's Best Restaurant! Come and try it for yourself.`)  \n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'img', photo)\n}\n\n\nfunction loadNav() {\n  nav = document.createElement('nav')\n  homeBtn = document.createElement('button')\n  menuBtn = document.createElement('button')\n  contactBtn = document.createElement('button')\n  homeBtn.textContent = 'Home'\n  menuBtn.textContent = 'Menu'\n  contactBtn.textContent = 'Contact'\n  nav.appendChild(homeBtn)\n  nav.appendChild(menuBtn)\n  nav.appendChild(contactBtn)\n  contentDiv.appendChild(nav)\n\n  loadEventListeners()\n}\n\n\nfunction updateNavSelection(btn) {\n  console.log('hello')\n  btn.classList.add('selected')\n}\n\n\nfunction loadEventListeners() {\n  homeBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(homeBtn)\n    loadHome(_home_jpg__WEBPACK_IMPORTED_MODULE_4__)\n  })\n  \n  menuBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(menuBtn)\n    ;(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__.loadMenu)(_menu_jpg__WEBPACK_IMPORTED_MODULE_5__)\n  })\n  \n  contactBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(contactBtn)\n    ;(0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.loadContact)(_contact_jpg__WEBPACK_IMPORTED_MODULE_6__)\n  })\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _loadContent_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadContent.js */ \"./src/loadContent.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _images_home_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/home.jpg */ \"./src/images/home.jpg\");\n/* harmony import */ var _images_menu_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/menu.jpg */ \"./src/images/menu.jpg\");\n/* harmony import */ var _images_contact_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/contact.jpg */ \"./src/images/contact.jpg\");\n\n\n\n\n\n\n\n\n\nconst contentDiv = document.getElementById('content')\n\n\nlet nav\nlet homeBtn\nlet menuBtn\nlet contactBtn\n\n\nloadNav()\nloadHome(_images_home_jpg__WEBPACK_IMPORTED_MODULE_4__)\nupdateNavSelection(homeBtn)\n\n\nfunction loadHome(photo) {\n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'h1', `Welcome to The World's Best Restaurant!`)\n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'p', `This is The World's Best Restaurant! Come and try it for yourself.`)  \n  ;(0,_loadContent_js__WEBPACK_IMPORTED_MODULE_1__.loadContent)('content', 'img', photo)\n}\n\n\nfunction loadNav() {\n  nav = document.createElement('nav')\n  homeBtn = document.createElement('button')\n  menuBtn = document.createElement('button')\n  contactBtn = document.createElement('button')\n  homeBtn.textContent = 'Home'\n  menuBtn.textContent = 'Menu'\n  contactBtn.textContent = 'Contact'\n  nav.appendChild(homeBtn)\n  nav.appendChild(menuBtn)\n  nav.appendChild(contactBtn)\n  contentDiv.appendChild(nav)\n\n  loadEventListeners()\n}\n\n\nfunction updateNavSelection(btn) {\n  console.log('hello')\n  btn.classList.add('selected')\n}\n\n\nfunction loadEventListeners() {\n  homeBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(homeBtn)\n    loadHome(_images_home_jpg__WEBPACK_IMPORTED_MODULE_4__)\n  })\n  \n  menuBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(menuBtn)\n    ;(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__.loadMenu)(_images_menu_jpg__WEBPACK_IMPORTED_MODULE_5__)\n  })\n  \n  contactBtn.addEventListener('click', (event)=>{\n    contentDiv.innerHTML = \"\"\n    loadNav()\n    updateNavSelection(contactBtn)\n    ;(0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.loadContact)(_images_contact_jpg__WEBPACK_IMPORTED_MODULE_6__)\n  })\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -150,33 +150,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/contact.jpg":
-/*!*************************!*\
-  !*** ./src/contact.jpg ***!
-  \*************************/
+/***/ "./src/images/contact.jpg":
+/*!********************************!*\
+  !*** ./src/images/contact.jpg ***!
+  \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"70d504573fd6ac03f718.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/contact.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/70d504573fd6ac03f718.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/contact.jpg?");
 
 /***/ }),
 
-/***/ "./src/home.jpg":
-/*!**********************!*\
-  !*** ./src/home.jpg ***!
-  \**********************/
+/***/ "./src/images/home.jpg":
+/*!*****************************!*\
+  !*** ./src/images/home.jpg ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"c240bbdf7cdb2a466349.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/home.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/c240bbdf7cdb2a466349.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/home.jpg?");
 
 /***/ }),
 
-/***/ "./src/menu.jpg":
-/*!**********************!*\
-  !*** ./src/menu.jpg ***!
-  \**********************/
+/***/ "./src/images/menu.jpg":
+/*!*****************************!*\
+  !*** ./src/images/menu.jpg ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"a3c46061937c8956020f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/menu.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/a3c46061937c8956020f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/menu.jpg?");
 
 /***/ })
 

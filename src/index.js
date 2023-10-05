@@ -2,9 +2,9 @@ import './style.css';
 import { loadContent } from './loadContent.js'
 import { loadMenu } from './menu.js'
 import { loadContact } from './contact.js'
-import homePhoto from './home.jpg';
-import menuPhoto from './menu.jpg';
-import contactPhoto from './contact.jpg';
+import homePhoto from './images/home.jpg';
+import menuPhoto from './images/menu.jpg';
+import contactPhoto from './images/contact.jpg';
 
 
 const contentDiv = document.getElementById('content')
